@@ -395,6 +395,7 @@ li {
 }
 
 .price-image-container>img {
+  width: 384px;
   margin: 15px;
 }
 
