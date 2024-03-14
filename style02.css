@@ -14,37 +14,27 @@ li {
   height: 100px;
   padding: 10px 24px 10px 24px;
   z-index: 50;
-  position: fixed;
-  top: 0px;
 }
 
-.main-logo {
-  position: relative;
+.logo-container {
   width: 80px;
   height: 80px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.logo {
+  position: relative;
+  width: 64px;
+  height: 64px;
 }
 
 @media (max-width: 768px) {
-
-  *,
-  body,
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    list-style: none;
-  }
-
   .navbar {
-    width: 100%;
-    height: 64px;
-    z-index: 50;
-    position: fixed;
-    top: 0px;
+    height: 50px;
+    padding: 5px 12px;
+    /* 必要に応じて調整 */
   }
-
 
   .logo-container {
     width: 60px;
@@ -53,10 +43,9 @@ li {
     margin: 5px;
   }
 
-  .main-logo {
-    position: relative;
-    width: 40px;
-    height: 40px;
+  .logo {
+    width: 48px;
+    height: 48px;
   }
 }
 
@@ -119,45 +108,31 @@ li {
 }
 
 @media (max-width: 768px) {
-  .img-fluid {
-    filter: brightness(100%);
-    width: 100%;
-    height: 580px;
-  }
-
   .title {
-    font-size: 43px;
-  }
-
-  .main-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-size: 40px;
+    /* タイトルのフォントサイズを調整 */
   }
 
   .title-sub {
     font-size: 18px;
-    width: 235px;
+    /* サブタイトルのフォントサイズを調整 */
   }
 
   .transparent-button {
-    padding: 10px 80px;
-    background-color: transparent;
-    border-radius: 4px;
-    font-family: "Darker Grotesque", sans-serif;
-    color: white;
-    border: 0.5px solid white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    padding: 5px 30px;
+    /* ボタンのパディングを調整 */
+    font-size: 14px;
+    /* ボタンのフォントサイズを調整 */
   }
 
   .overlay-content {
     top: 50%;
+    /* コンテンツの位置を調整 */
   }
 }
 
-.ecy-description-container {
+/* コンテンツ０１ */
+.main-content1 {
   width: 100%;
   height: 385px;
   display: flex;
@@ -165,16 +140,17 @@ li {
   align-items: center;
   justify-content: center;
   text-align: center;
+  /* 中央揃えにするために自動マージンを設定 */
 }
 
-.ecy-description-wrapper {
+.content1-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.ecy-description-title {
+.content1-title {
   font-family: "DM Serif Display", serif;
   font-size: 56px;
   font-weight: 400;
@@ -187,7 +163,7 @@ li {
   align-items: center;
 }
 
-.ecy-description p {
+.content1-description p {
   margin: 0;
   font-family: "Darker Grotesque", sans-serif;
   font-size: 18px;
@@ -200,27 +176,27 @@ li {
 }
 
 @media (max-width: 768px) {
-  .ecy-description-container {
-    width: 100%;
-    height: 265px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .ecy-description-title {
+  .content1-title {
     font-size: 32px;
-
+    /* タイトルのフォントサイズを調整 */
   }
 
-  .ecy-description p {
-    font-size: 14px;
+  .content1-description p {
+    font-size: 16px;
+    /* 説明文のフォントサイズを調整 */
+  }
+
+  .main-content1,
+  .main-content2 {
+    height: auto;
+    /* コンテンツの高さを自動にして柔軟性を持たせる */
+    padding: 20px 0;
+    /* 上下のパディングを追加 */
   }
 }
 
-.recommended-tour {
+/* コンテンツ０２ */
+.main-content2 {
   background-color: #F9FF81;
   width: 100%;
   height: 2382px;
@@ -229,7 +205,7 @@ li {
   align-items: center;
 }
 
-.recommended-tour-content {
+.content2 {
   width: 1120px;
   height: 1068px;
   margin: 81px 80px;
@@ -242,7 +218,7 @@ li {
 .recommended-title {
   font-family: "DM Serif Display", serif;
   font-weight: 500;
-  font-size: 56px;
+  font-size: 3rem;
 }
 
 .recommended-image-content {
@@ -296,81 +272,15 @@ li {
 }
 
 @media (max-width: 768px) {
-  .recommended-tour {
-    background-color: #F9FF81;
+  .content2 {
     width: 100%;
-    height: 1747px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .recommended-tour-content {
-    width: 420px;
     padding: 40px 20px;
-    height: 1247px;
-    margin: 0px;
-  }
-
-  .recommended-title {
-    font-family: "DM Serif Display", serif;
-    font-weight: 500;
-    font-size: 32px;
-  }
-
-  .recommended-image-content {
-    width: 398px;
-    height: 1019px;
-    padding: 0px 96px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .recommended-image-content>ul>li>img {
-    list-style: none;
-    margin: 8px;
-    width: 191px;
-    height: 191px;
-  }
-
-  .recommended-image-content>ul {
-    padding: 0px;
-    display: grid;
-    grid-template-areas:
-      "a b "
-      "c d"
-      "e f"
-    ;
-  }
-
-  .sample-content {
-    width: 100%;
-    height: 555px;
-    margin: 56px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 60px;
-    column-gap: 84px;
-    margin: 0px;
-  }
-
-  .sample-content>h3 {
-    font-size: 32px;
-    font-weight: 400;
-    font-family: "DM Serif Display", serif;
-    padding-bottom: 56px;
-  }
-
-  .sample-image {
-    width: 398px;
-    height: 392px;
+    height: auto;
   }
 }
 
 /* コンテンツ０３ */
-.invitation {
+.main-content3 {
   background-color: #000000;
   width: 100%;
   height: 240px;
@@ -379,14 +289,14 @@ li {
   align-items: center;
 }
 
-.invitation-container {
+.content3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.invitation-container p {
+.content3 p {
   font-family: "Cormorant Garamond", serif;
   font-size: 40px;
   font-weight: 700;
@@ -394,16 +304,19 @@ li {
 }
 
 @media (max-width: 768px) {
-  .invitation {
-    height: 157px;
+  .main-content3 {
+    height: auto;
+    padding: 20px 0;
   }
 
-  .invitation-container p {
+  .content3 p {
     font-size: 24px;
   }
 }
 
-.main-price {
+
+/* コンテンツ０４ */
+.main-content4 {
   width: 100%;
   height: 868px;
   display: flex;
@@ -411,7 +324,7 @@ li {
   justify-content: center;
 }
 
-.price-content {
+.content4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -473,9 +386,8 @@ li {
 }
 
 @media (max-width: 768px) {
-  .main-price {
-    padding-top: 50px;
-    height: 868px;
+  .main-content4 {
+    height: auto;
   }
 
   .price-title {
@@ -484,37 +396,13 @@ li {
 
   .price-description p,
   .price-image-description p {
-    font-size: 14px;
-  }
-
-  .price-image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .price-image-container>img {
-    width: 280px;
-    height: 208px;
-    margin-top: 30px;
-  }
-
-  .price-image-description {
-    margin: 30px 0px;
-  }
-
-  .price-image-description p {
-    margin-bottom: 5px;
-    padding: 0px 40px;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: "Darker Grotesque", sans-serif;
-    text-align: center;
+    font-size: 16px;
   }
 }
 
-.guide {
+
+/* コンテンツ０５ */
+.main-content5 {
   background-color: #F9FF81;
   width: 100%;
   height: 701px;
@@ -525,7 +413,7 @@ li {
   align-items: center;
 }
 
-.your-tour-guide-container {
+.content5-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -578,57 +466,26 @@ li {
 
 
 
-.guide-title {
+.content5-title {
   font-size: 56px;
   font-weight: 400;
   font-family: "DM Serif Display", serif;
 }
 
 @media (max-width: 768px) {
-  .guide {
+  .main-content5 {
     height: auto;
     padding: 20px 0;
   }
 
-  .guide-title {
+  .content5-title {
     font-size: 32px;
-  }
-
-  .icons-image {
-    width: 350px;
-    height: 343px;
-    margin: 0px;
-  }
-
-  .your-tour-guide-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .info-container {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-  }
-
-  .info-title>h3 {
-    font-size: 24px;
-  }
-
-  .TikTok-icon {
-    width: 36px;
-    height: 36px;
-    margin-right: 16px;
-  }
-
-  .tour-guide-description>p {
-    font-size: 14px;
   }
 }
 
-.slide-show {
+
+/* コンテンツ０６ */
+.main-content6 {
   background-color: #FFFFFF;
   width: 100%;
   height: 536px;
@@ -645,13 +502,15 @@ li {
 }
 
 .slide-wrapper {
-  width: 80%;
-  height: 227px;
+  width: 50%;
+  height: 300px;
   position: relative;
   overflow: hidden;
+  /* はみ出したスライドを隠す */
 }
 
 .slide {
+  /*スライド全体 */
   width: 300%;
   height: 100%;
   display: flex;
@@ -659,39 +518,45 @@ li {
 }
 
 .slide div {
-  width: 90%;
+  /* スライド */
+  width: 33.33%;
   height: 100%;
   font-size: 16px;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  border-radius: 6px;
 }
 
 .slide1 {
+  /* スライドさせるために必要なクラス */
   transform: translateX(0);
 }
 
 .slide2 {
+  /* スライドさせるために必要なクラス */
   transform: translateX(-33.33%);
 }
 
 .slide3 {
+  /* スライドさせるために必要なクラス */
   transform: translateX(-66.66%);
 }
 
-/* .slide div:nth-of-type(1) {
+.slide div:nth-of-type(1) {
+  /* 背景色 */
   background-color: #E1F3FC;
 }
 
 .slide div:nth-of-type(2) {
+  /* 背景色 */
   background-color: #FCE8F0;
 }
 
 .slide div:nth-of-type(3) {
+  /* 背景色 */
   background-color: #E3F1E4;
-} */
+}
 
 .next {
   position: absolute;
@@ -746,81 +611,10 @@ li {
   background-color: #000;
 }
 
-.slide-content {
-  width: 1016px;
-  height: 224px;
-  background-color: #000;
-  padding: 20px;
-}
-
-.slide-content>img {
-  width: 144px;
-  height: 174px;
-}
-
-.slide-message {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.slide-message>p {
-  margin: 0px;
-  color: white;
-  text-align: left;
-}
-
 @media (max-width: 768px) {
-  .slide-show {
-    height: 600px;
+  .main-content6 {
+    height: auto;
     padding: 20px 0;
-  }
-
-  .slide-wrapper {
-    width: 99%;
-    height: 527px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .slide {
-    width: 300%;
-    height: 100%;
-    display: flex;
-    transition: all 1s;
-  }
-
-  .slide div {
-    width: 80%;
-    height: 100%;
-    font-size: 16px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-  }
-
-  .slide-content {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 207px;
-    padding: 0px;
-  }
-
-  .slide-message {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
-  }
-
-  .slide-message>p {
-    font-size: 14px;
-    margin: 0px;
-    color: white;
-    text-align: left;
   }
 
   .voice-title {
@@ -828,8 +622,22 @@ li {
   }
 }
 
+/* コンテンツ０７ */
+.main-content7 {
+  background-color: #000000;
+  width: 100%;
+  height: 240px;
+}
 
-.footer-content {
+@media (max-width: 768px) {
+  .main-content7 {
+    height: auto;
+    padding: 20px 0;
+  }
+}
+
+/* コンテンツ０８ */
+.main-content8 {
   background-color: #F9FF81;
   width: 100%;
   height: 197px;
@@ -850,25 +658,13 @@ li {
 .footer-icons>img {
   width: 40px;
   height: 40px;
-  margin: 10px;
+  margin-right: 10px;
 }
 
-
 @media (max-width: 768px) {
-  .footer-content {
+  .main-content8 {
     height: auto;
     padding: 20px 0;
-  }
-
-  .footer-content>p {
-    margin-top: 20px;
-    font-size: 11px;
-  }
-
-  .footer-main-icon {
-    width: 80px;
-    height: 80px;
-    padding: 10px;
   }
 
   .logo-content {
