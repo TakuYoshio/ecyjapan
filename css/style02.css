@@ -1,0 +1,247 @@
+/* ----- Start All Style ----- */
+*,
+body {
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+h1,h2,h3,h4 {
+  font-family: "kepler-std", serif;  
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 56px;
+}
+h3 {
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.transparent-button {
+  width: 320px;
+  margin: 0 auto;
+  padding: 10px 60px;
+  background-color: transparent;
+  border-radius: 4px;
+  color: white;
+  border: 0.5px solid white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.transparent-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.section01 {
+  width: 100%;
+  text-align: center;
+  margin: 104px auto;
+}
+.section02 {
+  background-color: #F9FF81;
+  width: 100%;
+  align-items: center;
+  padding: 104px 0;
+  margin: 0 auto;
+}
+.wrapper {
+  width: 1120px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ----- End All Style ----- */
+
+/* ----- Start Header ----- */
+.navbar {
+  width: 100%;
+  height: 100px;
+  padding: 10px 24px 10px 24px;
+  z-index: 50;
+  position: fixed;
+  top: 0px;
+}
+
+.logo-container {
+  width: 80px;
+  height: 80px;
+}
+
+.logo {
+  width: 100%;
+}
+/* ----- End Header ----- */
+
+/* ----- Start FKV ----- */
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.overlay-content {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.fkv-content {
+  text-align: center;
+  display: grid;
+  gap: 32px;
+}
+
+.main-title {
+  display: grid;
+  gap: 8px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 80px;
+  margin-bottom: 0px;
+}
+
+.title-sub {
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+#changePic {
+  animation: imgfade 4s infinite;
+  opacity: 1;
+}
+
+.img-fluid {
+  filter: brightness(40%);
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+/* ----- End FKV ----- */
+
+/* ----- Start WhyECYjapan ----- */
+.whyecyjapan-content {
+  display: grid;
+  gap: 24px;
+}
+/* ----- End WhyECYjapan ----- */
+
+/* ----- Start Recommended ----- */
+
+.recommended-tour-content {
+  display: grid;
+  gap: 56px;
+}
+.recommended-image-content {
+  display: grid;
+  gap: 32px;
+  grid-template-areas:
+    "a b c"
+    "d e f"
+    "g h i"
+  ;
+}
+.recommended-image-content>li {
+  width: 100%;
+}
+.recommended-image-content>li>img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.sample-content {
+  margin-top: 56px;
+  display: grid;
+  gap: 32px;
+}
+.sample-content > img {
+  margin: 0 auto;
+  width: 100%;
+}
+/* ----- End Recommended ----- */
+
+/* ------ Start CTA ------ */
+#cta {
+  background-color: #000000;
+  width: 100%;
+  padding: 64px;
+  text-align: center;
+}
+/* ------ End CTA ------ */
+
+/* ------ Start Price ------ */
+.price-content {
+  display: grid;
+  gap: 40px;
+}
+.price-content:first-child {
+  display: grid;
+  gap: 24px;
+}
+.price-image {
+  display: grid;
+  grid-template-areas: "a b";
+  gap: 40px;
+}
+.price-image > img {
+  width: 100%;
+}
+
+/* ------ End Price ------ */
+
+/* ------ Start Guide ------ */
+.guide-container > h2 {
+  margin-bottom: 32px;
+}
+.guide-content {
+  display: grid;
+  gap: 32px;
+  grid-template-areas: "a b";
+}
+.guide-description {
+  display: grid;
+}
+.guide-description > .guide-title {
+  display: flex;
+  align-items: center;
+}
+.guide-description > .guide-title > h3 {
+  margin-right: 16px;
+}
+.guide-description > .guide-title > .TikTok-icon {
+  margin-right: 16px;
+  width: 40px;
+}
+.guide-description > .guide-title > .TikTok-icon > img {
+  width: 100%;
+}
+.guide-text {
+  text-align: left;
+}
+
+/* ------ End Guide ------ */
