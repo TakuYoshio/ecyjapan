@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E.C.Y japan - E.C.Y.japanと一緒に日本語を勉強しよう！ -</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Potta+One&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init({
+      publicKey: 'ETY3KazN2DMXQLBia', // .envファイル
+    });
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        emailjs.sendForm('service_h90oreq', 'template_mv3pf58', this) // .envファイル
+          .then(() => {
+            alert('SUCCESS!');
+          }, (error) => {
+            alert('FAILED...');
+          });
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <p class="logo-container">
+        <img class="main-logo" src="/image/logo.png" alt="logo">
+      </p>
+    </nav>
+  </header>
+  <main>
+    <div class="image-container">
+      <div class="overlay-content">
+        <div class="main-title">
+          <h1 class="title">Inquiry Form</h1>
+        </div>
+      </div>
+      <img id="changePic" class="img-fluid" src="/image/david-edelstein-N4DbvTUDikw-unsplash.jpg" alt="">
+    </div>
+    <div class="main-content">
+      <div class="form-container">
+        <form id="contact-form">
+          <div class="text-input">
+            <label for="" class="text-input-label">
+              Name
+              (<span>require</span>)
+            </label>
+            <input class="input-form" type="text" name="user_name" required> <!--  name属性：user_name -->
+          </div>
+          <div class="text-input">
+            <label for="" class="text-input-label">
+              E-mail
+              (<span>require</span>)
+            </label>
+            <input class="input-form" type="email" name="user_email" required> <!--  name属性：user_email -->
+          </div>
+          <div class="text-input">
+            <label for="" class="text-input-label">
+              Email
+              (reconfirm)
+            </label>
+            <input class="input-form" type="email" name="confirm_email" required>
+          </div>
+          <div class="text-input">
+            <label for="" class="text-input-label">
+              Phone number
+            </label>
+            <input class="input-form" type="text" name="user_phone"> <!--  name属性：user_phone -->
+          </div>
+          <div class="text-input">
+            <label for="" class="text-input-label">
+              Country
+            </label>
+            <input class="input-form" type="text" name="user_country"> <!--  name属性：user_country -->
+          </div>
+          <div class="date-input">
+            <label for="" class="text-input-label">
+              Start date / End date
+            </label>
+            <div>
+              <p class="input-form-label">
+                <label for="">Start date</label>
+                <input class="input-form-date" type="date" name="start_date"> <!--  name属性：start_date -->
+              </p>
+              <p class="input-form-label">
+                <label for="">End date</label>
+                <input class="input-form-date" type="date" name="end_date"> <!--  name属性：end_date -->
+              </p>
+            </div>
+          </div>
+          <div class="text-input">
+            <label for="" class="text-input-label">
+              How many people will be traveling?
+            </label>
+            <input class="input-form" type="text" name="name">
+          </div>
+          <div class="textarea-input">
+            <label for="" class="text-input-label">
+              Where do you want to go?
+            </label>
+            <textarea class="textarea-form" name="message" id="" cols="20" rows="5"></textarea>
+          </div>
+          <div class="textarea-input">
+            <label for="" class="text-input-label">
+              Any special requests you want to let us know
+            </label>
+            <textarea class="textarea-form" name="" id="" cols="20" rows="5"></textarea>
+          </div>
+          <div class="book-container">
+            <button type="submit" class="book-now-button">
+              BOOK NOW
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="logo-content">
+        <img class="main-logo footer-main-icon" src="/image/logo.png" alt="logo">
+        <div class="footer-icons">
+          <img src="/image/x-icon.png" alt="">
+          <img src="/image/instagram-icon.png" alt="">
+          <img src="/image/youtube-icon.png" alt="">
+          <img src="/image/tiktok-icon.png" alt="">
+        </div>
+      </div>
+      <p>Copyright &copy;E.C.Y japan All rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
