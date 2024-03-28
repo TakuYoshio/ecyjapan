@@ -37,7 +37,7 @@ p {
 .transparent-button {
   width: 320px;
   margin: 0 auto;
-  padding: 10px 60px;
+  padding: 10px;
   background-color: transparent;
   border-radius: 4px;
   color: white;
@@ -65,7 +65,8 @@ p {
   margin: 0 auto;
 }
 .wrapper {
-  width: 1120px;
+  max-width: 1120px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -223,6 +224,9 @@ p {
   gap: 32px;
   grid-template-areas: "a b";
 }
+.guide-image {
+  width: 100%;
+}
 .guide-description {
   display: grid;
 }
@@ -245,3 +249,231 @@ p {
 }
 
 /* ------ End Guide ------ */
+
+/* ------ Start Voice ------ */
+#voice {
+  margin-bottom: 120px;
+}
+.voice-container {
+  margin: 0 auto;
+}
+.voice-content {
+  display: grid;
+  gap: 32px;
+}
+.slide-contents {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+.slide-contents .slide-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background-color: #000000;
+}
+.slide-contents .slide-items img {
+  width: 150px;
+  margin-right: 32px;
+}
+.slide-contents .slide-items p {
+  width: calc(100% - 182px);
+  color: #ffffff;
+  text-align: left;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000000;
+}
+.slick-dots li button:before {
+  font-size: 18px;
+  top: 6px;
+}
+
+/* ------ End Voice ------ */
+
+/* ------ Start Footer ------ */
+.footer-container {
+  background-color: #F9FF81;
+  padding: 32px 24px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.footer-icons {
+  display: flex;
+}
+.footer-icons li  {
+  margin-right: 24px;
+}
+.footer-icons li:last-child  {
+  margin-right: 0;
+}
+.footer-icons li a  {
+  width: 40px;
+}
+.footer-icons li a img {
+  width: 40px;
+}
+.copyright {
+  text-align: center;
+}
+/* ------ End Footer ------ */
+
+/*--------------- SP Screen ---------------*/
+@media (max-width: 768px) {
+  /* ----- Start All Style ----- */
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .transparent-button {
+    width: 240px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  .section01 {
+    margin: 56px auto;
+  }
+  .section02 {
+    padding: 56px 0;
+  }
+  .wrapper {
+    padding: 0 3%;
+  }
+
+  /* ----- End All Style ----- */
+
+  /* ----- Start Header ----- */
+  .navbar {
+    padding: 10px 24px 10px 24px;
+  }
+
+  .logo-container {
+    width: 48px;
+    height: 48px;
+  }
+  /* ----- End Header ----- */
+
+  /* ----- Start FKV ----- */
+  .fkv-content {
+    gap: 24px;
+  }
+
+  .main-title {
+    display: grid;
+    gap: 4px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .title-sub {
+    font-size: 16px;
+  }
+  /* ----- End FKV ----- */
+
+  /* ----- Start WhyECYjapan ----- */
+  .whyecyjapan-content {
+    gap: 16px;
+  }
+  /* ----- End WhyECYjapan ----- */
+
+  /* ----- Start Recommended ----- */
+
+  .recommended-tour-content {
+    display: grid;
+    gap: 24px;
+  }
+  .recommended-image-content {
+    gap: 8px;
+  }
+
+  .sample-content {
+    margin-top: 32px;
+    gap: 24px;
+  }
+  /* ----- End Recommended ----- */
+
+  /* ------ Start CTA ------ */
+  #cta {
+    padding: 48px;
+  }
+  /* ------ End CTA ------ */
+
+  /* ------ Start Price ------ */
+  .price-content {
+    gap: 32px;
+  }
+  .price-content:first-child {
+    gap: 24px;
+  }
+  .price-image {
+    gap: 16px;
+  }
+  /* ------ End Price ------ */
+
+  /* ------ Start Guide ------ */
+  .guide-container > h2 {
+    margin-bottom: 24px;
+  }
+  .guide-content {
+    gap: 24px;
+    justify-content: center;
+    grid-template-areas: 
+    "a"
+    "b"
+    ;
+  }
+  .guide-image {
+    max-width: 360px;
+  }
+  .guide-description > .guide-title > .TikTok-icon {
+    width: 32px;
+  }
+  /* ------ End Guide ------ */
+
+  /* ------ Start Voice ------ */
+  #voice {
+    margin-bottom: 88px;
+  }
+  .voice-content {
+    gap: 24px;
+  }
+  .slide-contents .slide-items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+  }
+  .slide-contents .slide-items img {
+    margin-right: 0;
+  }
+  .slide-contents .slide-items p {
+    width: 100%;
+  }
+  /* ------ End Voice ------ */
+
+  /* ------ Start Footer ------ */
+  .footer-icons li  {
+    margin-right: 16px;
+  }
+  .footer-icons li a  {
+    width: 32px;
+  }
+  .footer-icons li a img {
+    width: 32px;
+  }
+  /* ------ End Footer ------ */
+}
