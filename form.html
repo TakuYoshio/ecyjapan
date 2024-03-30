@@ -28,10 +28,11 @@
     window.onload = function () {
       document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
-        emailjs.sendForm('service_e1g9itm', 'template_xlf3smn', this) // .envファイル
+        emailjs.sendForm('service_e1g9itm', 'template_a071swg', this) // .envファイル
           .then(() => {
             alert('SUCCESS!');
           }, (error) => {
+            console.log(error);
             alert('FAILED...');
           });
       });
