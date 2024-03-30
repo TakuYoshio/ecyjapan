@@ -21,18 +21,65 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
     emailjs.init({
-      publicKey: 'NqO-u-L0zrd2dvHVs', // .envファイル
+      publicKey: 'EmailJS_publicKey', // .envファイル
     });
   </script>
   <script type="text/javascript">
     window.onload = function () {
       document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
-        emailjs.sendForm('service_e1g9itm', 'template_a071swg', this) // .envファイル
-          .then(() => {
-            alert('SUCCESS!');
-          }, (error) => {
-            console.log(error);
+
+        var isValid = true;
+
+        // 名前のバリデーション
+        var name = document.getElementsByName('user_name')[0];
+        var nameError = document.getElementById('name-error');
+        if (name.value.trim() === '') {
+          nameError.textContent = 'Name is required.';
+          name.focus();
+          isValid = false;
+        } else {
+          nameError.textContent = '';
+        }
+
+        // メールアドレスのバリデーション
+        var email = document.getElementsByName('user_email')[0];
+        var emailError = document.getElementById('email-error');
+        if (email.value.trim() === '') {
+          emailError.textContent = 'E-mail is required.';
+          email.focus();
+          isValid = false;
+        } else {
+          emailError.textContent = '';
+        }
+
+        // メールアドレス再確認のバリデーション
+        var confirmEmail = document.getElementsByName('confirm_email')[0];
+        var confirmEmailError = document.getElementById('confirm-email-error');
+        if (confirmEmail.value.trim() === '') {
+          confirmEmailError.textContent = 'E-mail confirmation is required.';
+          if (isValid) {
+            confirmEmail.focus();
+          }
+          isValid = false;
+        } else if (email.value.trim() !== confirmEmail.value.trim()) {
+          confirmEmailError.textContent = 'E-mail addresses do not match.';
+          if (isValid) {
+            confirmEmail.focus();
+          }
+          isValid = false;
+        } else {
+          confirmEmailError.textContent = '';
+        }
+
+        if (!isValid) {
+          return;
+        }
+
+        emailjs.sendForm('EmailJS_serviceID', 'EmailJS_templateID', this)
+          .then(function () {
+            window.location.href = 'thanks.html#thanks';
+          }, function (error) {
             alert('FAILED...');
           });
       });
@@ -65,21 +112,30 @@
               Name
               (<span>require</span>)
             </label>
-            <input class="input-form" type="text" name="user_name" required> <!--  name属性：user_name -->
+            <div>
+              <input class="input-form" type="text" name="user_name"> <!--  name属性：user_name -->
+              <span id="name-error" class="error-message"></span>
+            </div>
           </div>
           <div class="text-input">
             <label for="" class="text-input-label">
               E-mail
               (<span>require</span>)
             </label>
-            <input class="input-form" type="email" name="user_email" required> <!--  name属性：user_email -->
+            <div>
+              <input class="input-form" type="email" name="user_email"> <!--  name属性：user_email -->
+              <span id="email-error" class="error-message"></span>
+            </div>
           </div>
           <div class="text-input">
             <label for="" class="text-input-label">
               Email
               (reconfirm)
             </label>
-            <input class="input-form" type="email" name="confirm_email" required>
+            <div>
+              <input class="input-form" type="email" name="confirm_email" id="confirm_email">
+              <span id="confirm-email-error" class="error-message"></span>
+            </div>
           </div>
           <div class="text-input">
             <label for="" class="text-input-label">
