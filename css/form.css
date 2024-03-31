@@ -60,7 +60,7 @@ textarea {
   width: 736px;
   display: flex;
   align-items: center;
-  border-bottom: 0.5px solid;
+  border-bottom: 1px solid;
   padding: 40px 0px;
 }
 
@@ -100,7 +100,7 @@ textarea {
   padding: 40px 0;
   display: flex;
   align-items: center;
-  border-bottom: 0.5px solid;
+  border-bottom: 1px solid;
 }
 
 .date-input > div {
@@ -123,7 +123,7 @@ label {
   width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: 0.5px solid;
+  border-bottom: 1px solid;
   padding: 40px 0px;
 }
 
@@ -141,10 +141,10 @@ label {
   width: 320px;
   padding: 16px 0px;
   background-color: #F9FF81;
-  color: black;
+  color: #333333;
   border: none;
   transition: background-color 0.3s, color 0.3s;
-  box-shadow: 2.5px 2px 2px black;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
   font-family: "Darker Grotesque", sans-serif;
 }
 
