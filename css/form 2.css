@@ -224,17 +224,3 @@ label {
     font-size: 14px;
   }
 }
-
-/* -------radio button ----------------- */
-.radio-button {
-  padding: 20px 0;
-  border-bottom: #333333 1px solid;
-}
-
-.md-radio.md-radio-inline {
-  display: inline-block;
-}
-.md-radio label {
-  padding: 0 8px;
-  margin-right: 24px;
-}

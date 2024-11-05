@@ -19,72 +19,6 @@
   <link rel="stylesheet" href="css/style02.css">
   <link rel="stylesheet" href="css/form.css">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>
-    emailjs.init({
-      publicKey: 'NqO-u-L0zrd2dvHVs', // .envファイル
-    });
-  </script>
-  <script type="text/javascript">
-    window.onload = function () {
-      document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        var isValid = true;
-
-        // 名前のバリデーション
-        var name = document.getElementsByName('user_name')[0];
-        var nameError = document.getElementById('name-error');
-        if (name.value.trim() === '') {
-          nameError.textContent = 'Name is required.';
-          name.focus();
-          isValid = false;
-        } else {
-          nameError.textContent = '';
-        }
-
-        // メールアドレスのバリデーション
-        var email = document.getElementsByName('user_email')[0];
-        var emailError = document.getElementById('email-error');
-        if (email.value.trim() === '') {
-          emailError.textContent = 'E-mail is required.';
-          email.focus();
-          isValid = false;
-        } else {
-          emailError.textContent = '';
-        }
-
-        // メールアドレス再確認のバリデーション
-        var confirmEmail = document.getElementsByName('confirm_email')[0];
-        var confirmEmailError = document.getElementById('confirm-email-error');
-        if (confirmEmail.value.trim() === '') {
-          confirmEmailError.textContent = 'E-mail confirmation is required.';
-          if (isValid) {
-            confirmEmail.focus();
-          }
-          isValid = false;
-        } else if (email.value.trim() !== confirmEmail.value.trim()) {
-          confirmEmailError.textContent = 'E-mail addresses do not match.';
-          if (isValid) {
-            confirmEmail.focus();
-          }
-          isValid = false;
-        } else {
-          confirmEmailError.textContent = '';
-        }
-
-        if (!isValid) {
-          return;
-        }
-
-        emailjs.sendForm('service_c87ec1t', 'template_a071swg', this)
-          .then(function () {
-            window.location.href = 'thanks.html#thanks';
-          }, function (error) {
-            alert('FAILED...');
-          });
-      });
-    }
-  </script>
 </head>
 
 <body>
@@ -109,6 +43,22 @@
     <div class="main-content">
       <div class="form-container">
         <form id="contact-form">
+          <div class="radio-button">
+            <label for="" class="text-input-label">
+              Tour Plan
+              (<span>require</span>)
+            </label>
+            <div class="md-radio md-radio-inline">
+              <input id="all-day" type="radio" name="plan" value="All Day Tour" required>
+              <label for="all-day">All Day Tour</label>
+            </div>
+            <div class="md-radio md-radio-inline">
+              <input id="half-day" type="radio" name="plan" value="Half Day Tour">
+              <label for="half-day">Half Day Tour</label>
+            </div>
+            <!-- Error message -------- -->
+            <span id="radio-error" class="error-message"></span>
+          </div>
           <div class="text-input">
             <label for="" class="text-input-label">
               Name
@@ -153,18 +103,9 @@
           </div>
           <div class="date-input">
             <label for="" class="text-input-label">
-              Start date / End date
+              Preferred tour date
             </label>
-            <div>
-              <p class="input-form-label">
-                <label for="">Start date</label>
-                <input class="input-form-date" type="date" name="start_date"> <!--  name属性：start_date -->
-              </p>
-              <p class="input-form-label">
-                <label for="">End date</label>
-                <input class="input-form-date" type="date" name="end_date"> <!--  name属性：end_date -->
-              </p>
-            </div>
+            <input class="input-form" type="date" name="start_date"> <!--  name属性：Preferred tour date -->
           </div>
           <div class="text-input">
             <label for="" class="text-input-label">
@@ -218,5 +159,6 @@
     </div>
   </footer>
 </body>
+<script src="js/form.js"></script>
 
 </html>
