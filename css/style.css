@@ -1,6 +1,21 @@
+/* ----- Start All Style ----- */
 *,
-body,
+body {
+  font-family: "Darker Grotesque", sans-serif;
+}
 
+h1, h2, h3, h4 {
+  font-family: "kepler-std", serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 56px;
+}
+
+h3 {
+  font-size: 32px;
+}
 
 a {
   text-decoration: none;
@@ -15,6 +30,53 @@ li {
   list-style: none;
 }
 
+p {
+  font-size: 20px;
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.transparent-button {
+  display: inline-block;
+  width: 320px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 4px;
+  color: white;
+  border: 2px solid white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.transparent-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.section01 {
+  width: 100%;
+  text-align: center;
+  margin: 104px auto;
+}
+
+.section02 {
+  background-color: #F9FF81;
+  width: 100%;
+  align-items: center;
+  padding: 104px 0;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ----- End All Style ----- */
+/* ----- Start Header ----- */
 .navbar {
   width: 100%;
   height: 100px;
@@ -24,64 +86,27 @@ li {
   top: 0px;
 }
 
-.main-logo {
-  position: relative;
+.logo-container {
   width: 80px;
   height: 80px;
 }
 
-@media (max-width: 768px) {
-
-  *,
-  body,
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    list-style: none;
-  }
-
-  .navbar {
-    width: 100%;
-    height: 64px;
-    z-index: 50;
-    position: fixed;
-    top: 0px;
-  }
-
-
-  .logo-container {
-    width: 60px;
-    height: 60px;
-    padding: 5px;
-    margin: 5px;
-  }
-
-  .main-logo {
-    position: relative;
-    width: 40px;
-    height: 40px;
-  }
+.logo {
+  width: 100%;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* ----- End Header ----- */
+/* ----- Start FKV ----- */
 .image-container {
   position: relative;
   text-align: center;
-}
-
-
-.img-fluid {
-  filter: brightness(40%);
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-
-#changePic {
-  animation: imgfade 4s infinite;
-  opacity: 1;
 }
 
 .overlay-content {
@@ -94,9 +119,18 @@ li {
   color: white;
 }
 
+.fkv-content {
+  text-align: center;
+  display: grid;
+  gap: 32px;
+}
+
+.main-title {
+  display: grid;
+  gap: 8px;
+}
 
 .title {
-  font-family: "kepler-std", serif;
   font-weight: 400;
   font-size: 80px;
   margin-bottom: 0px;
@@ -108,718 +142,390 @@ li {
   font-size: 32px;
 }
 
-.transparent-button {
-  padding: 10px 60px;
-  background-color: transparent;
-  border-radius: 4px;
-  font-family: "Darker Grotesque", sans-serif;
-  color: white;
-  border: 0.5px solid white;
-  font-size: 24px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+#changePic {
+  animation: imgfade 4s infinite;
+  opacity: 1;
 }
 
-.transparent-button:hover {
-  background-color: white;
-  color: black;
-}
-
-@media (max-width: 768px) {
-  .img-fluid {
-    filter: brightness(100%);
-    width: 100%;
-    height: 580px;
-  }
-
-  .title {
-    font-size: 43px;
-  }
-
-  .main-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .title-sub {
-    font-size: 24px;
-  }
-
-  .transparent-button {
-    padding: 10px 80px;
-    background-color: transparent;
-    border-radius: 4px;
-    font-family: "Darker Grotesque", sans-serif;
-    color: white;
-    border: 0.5px solid white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-
-  .overlay-content {
-    top: 50%;
-  }
-}
-
-.ecy-description-container {
+.img-fluid {
+  filter: brightness(40%);
   width: 100%;
-  text-align: center;
-  margin: 104px auto;
+  max-height: 80vh;
+  height: 720px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.ecy-description-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/* ----- End FKV ----- */
+/* ----- Start WhyECYjapan ----- */
+.whyecyjapan-content {
+  display: grid;
+  gap: 24px;
 }
 
-.ecy-description-title {
-  font-family: "kepler-std", serif;
-  font-size: 56px;
-  font-weight: 400;
-  margin: 10px 0;
-}
-
-.content1-description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.ecy-description p {
-  margin: 0;
-  font-family: "Darker Grotesque", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.content1-description {
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 768px) {
-  .ecy-description-container {
-    margin: 56px auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .ecy-description-title {
-    font-size: 32px;
-
-  }
-
-  .ecy-description p {
-    font-size: 14px;
-  }
-}
-
-.recommended-tour {
-  background-color: #F9FF81;
-  width: 100%;
-  align-items: center;
-  padding: 104px 0;
-  margin: 0 auto;
-}
-
+/* ----- End WhyECYjapan ----- */
+/* ----- Start Recommended ----- */
 .recommended-tour-content {
-  width: 1120px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.recommended-title {
-  font-family: "kepler-std", serif;
-  font-weight: 500;
-  font-size: 56px;
+  display: grid;
+  gap: 56px;
 }
 
 .recommended-image-content {
-  width: 1120px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.recommended-image-content>ul {
-  padding: 0px;
   display: grid;
-  grid-template-areas:
-    "a b c"
-    "d e f"
-    "g h i"
-  ;
+  gap: 32px;
+  grid-template-areas: "a b c" "d e f" "g h i";
 }
 
-.recommended-image-content>ul>li>img {
-  list-style: none;
-  width: 288px;
-  height: 288px;
+.recommended-image-content > li {
+  width: 100%;
+}
+
+.recommended-image-content > li > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .sample-content {
   margin-top: 56px;
-  text-align: center;
+  display: grid;
+  gap: 32px;
 }
 
-.sample-content>h3 {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "kepler-std", serif;
-  margin: 56px;
+.sample-content > img {
+  margin: 0 auto;
+  width: 100%;
 }
 
-
-.sample-image {
-  width: 720px;
-}
-
-@media (max-width: 768px) {
-  .recommended-tour {
-    background-color: #F9FF81;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 56px 0;
-  }
-
-  .recommended-tour-content {
-    width: 100%;
-    margin: 0px;
-    margin-bottom: 40px;
-  }
-
-  .recommended-title {
-    font-family: "kepler-std", serif;
-    font-weight: 500;
-    font-size: 32px;
-  }
-
-  .recommended-image-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 3%;
-  }
-
-  .recommended-image-content>ul>li>img {
-    list-style: none;
-    width: 100%;
-    height: auto;
-  }
-
-  .recommended-image-content>ul {
-    width: 100%;
-    padding: 0px;
-    display: grid;
-    gap: 8px;
-    grid-template-areas:
-      "a b "
-      "c d"
-      "e f"
-    ;
-  }
-
-  .sample-content {
-    width: 100%;
-    margin-top: 56px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    column-gap: 84px;
-    margin: 0px;
-  }
-
-  .sample-content>h3 {
-    font-size: 32px;
-    font-weight: 400;
-    font-family: "kepler-std", serif;
-    margin: 32px;
-  }
-
-  .sample-image {
-    width: 100%;
-    padding: 0 3%;
-    margin: 0 auto;
-  }
-}
-
-/* コンテンツ０３ */
-.invitation {
+/* ----- End Recommended ----- */
+/* ------ Start CTA ------ */
+#cta {
   background-color: #000000;
   width: 100%;
   padding: 64px;
   text-align: center;
 }
 
-.invitation-container p {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 40px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.main-price {
+#cta > div {
   width: 100%;
-  margin: 104px auto;
-  text-align: center;
 }
 
-.price-title {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "kepler-std", serif;
+/* ------ End CTA ------ */
+/* ------ Start Price ------ */
+.price-content {
+  display: grid;
+  gap: 40px;
 }
 
-.price-description p {
-  margin-bottom: 5px;
-  font-size: 18px;
-  font-weight: 500;
-  font-family: "Darker Grotesque", sans-serif;
+.price-content:first-child {
+  display: grid;
+  gap: 24px;
 }
 
-.price-image-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.price-image {
+  display: grid;
+  grid-template-areas: "a b";
+  gap: 40px;
 }
 
-.price-image-container>img {
-  width: 384px;
-  margin: 15px;
-}
-
-.price-image-description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.price-image-description p {
-  margin-bottom: 5px;
-  font-size: 18px;
-  font-weight: 500;
-  font-family: "Darker Grotesque", sans-serif;
-}
-
-.guide {
-  background-color: #F9FF81;
+.price-image > img {
   width: 100%;
-  padding: 104px;
+}
+
+/* ------ End Price ------ */
+/* ------ Start Guide ------ */
+.guide-container > h2 {
+  margin-bottom: 32px;
+}
+
+.guide-content {
+  display: grid;
+  gap: 32px;
+  grid-template-areas: "a b";
+}
+
+.guide-image {
+  width: 100%;
+}
+
+.guide-description {
+  display: grid;
+}
+
+.guide-description > .guide-title {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.your-tour-guide-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.icons-image {
-  width: 350px;
-  margin-right: 64px;
-}
-
-.info-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-}
-
-.info-title>h3 {
-  font-size: 32px;
-  font-weight: 400;
-  font-family: "kepler-std", serif;
+.guide-description > .guide-title > h3 {
   margin-right: 16px;
-  margin-bottom: 0px;
 }
 
-.info-title>p {
-  width: 97px;
-  padding-top: 12px;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: "Darker Grotesque", sans-serif;
-}
-
-.TikTok-icon {
+.guide-description > .guide-title > .TikTok-icon {
+  margin-right: 16px;
   width: 40px;
-  height: 40px;
-  margin-right: 16px;
 }
 
-.tour-guide-description>p {
-  font-family: "Darker Grotesque", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  margin: 0px;
-}
-
-.guide-title {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "kepler-std", serif;
-}
-
-@media (max-width: 768px) {
-  .guide {
-    padding: 56px 0;
-  }
-
-  .guide-title {
-    font-size: 32px;
-  }
-
-  .icons-image {
-    width: 350px;
-    height: 343px;
-    margin: 0px;
-  }
-
-  .your-tour-guide-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .info-container {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-  }
-
-  .info-title>h3 {
-    font-size: 24px;
-  }
-
-  .TikTok-icon {
-    width: 36px;
-    height: 36px;
-    margin-right: 16px;
-  }
-
-  .tour-guide-description>p {
-    font-size: 14px;
-  }
-}
-
-.slide-show {
-  background-color: #FFFFFF;
+.guide-description > .guide-title > .TikTok-icon > img {
   width: 100%;
-  margin: 104px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
-.voice-title {
-  font-size: 56px;
-  font-weight: 400px;
-  font-family: "kepler-std", serif;
-}
-
-.slide-wrapper {
-  width: 80%;
-  height: 227px;
-  position: relative;
-  overflow: hidden;
-}
-
-.slide {
-  width: 300%;
-  height: 100%;
-  display: flex;
-  transition: all 1s;
-}
-
-.slide div {
-  width: 90%;
-  height: 100%;
-  font-size: 16px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  border-radius: 6px;
-}
-
-.slide1 {
-  transform: translateX(0);
-}
-
-.slide2 {
-  transform: translateX(-33.33%);
-}
-
-.slide3 {
-  transform: translateX(-66.66%);
-}
-
-/* .slide div:nth-of-type(1) {
-  background-color: #E1F3FC;
-}
-
-.slide div:nth-of-type(2) {
-  background-color: #FCE8F0;
-}
-
-.slide div:nth-of-type(3) {
-  background-color: #E3F1E4;
-} */
-
-.next {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  right: 10px;
-  bottom: 50%;
-  z-index: 10;
-  cursor: pointer;
-  border-top: solid 3px #000;
-  border-right: solid 3px #000;
-  -webkit-transform: rotate(45deg) translateY(50%);
-  transform: rotate(45deg) translateY(50%);
-}
-
-.prev {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 25px;
-  bottom: 50%;
-  z-index: 10;
-  cursor: pointer;
-  border-top: solid 3px #000;
-  border-right: solid 3px #000;
-  -webkit-transform: rotate(-135deg) translateY(-50%);
-  transform: rotate(-135deg) translateY(-50%);
-}
-
-.indicator {
-  width: 100%;
-  position: absolute;
-  bottom: 20px;
-  display: flex;
-  column-gap: 18px;
-  z-index: 10;
-  justify-content: center;
-  align-items: center;
-}
-
-.indicator li {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  list-style: none;
-  background-color: #fff;
-  border: 2px #000 solid;
-  cursor: pointer;
-}
-
-.indicator li:first-of-type {
-  background-color: #000;
-}
-
-.slide-content {
-  width: 1016px;
-  height: 224px;
-  background-color: #000;
-  padding: 20px;
-}
-
-.slide-content>img {
-  width: 144px;
-  height: 174px;
-}
-
-.slide-message {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.slide-message>p {
-  margin: 0px;
-  color: white;
+.guide-text {
   text-align: left;
 }
 
-@media (max-width: 768px) {
-  .slide-show {
-    margin: 56px auto;
-  }
-
-  .slide-wrapper {
-    width: 99%;
-    height: 527px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .slide {
-    width: 300%;
-    height: 100%;
-    display: flex;
-    transition: all 1s;
-  }
-
-  .slide div {
-    width: 80%;
-    height: 100%;
-    font-size: 16px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-  }
-
-  .slide-content {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 207px;
-    padding: 0px;
-  }
-
-  .slide-message {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
-  }
-
-  .slide-message>p {
-    font-size: 14px;
-    margin: 0px;
-    color: white;
-    text-align: left;
-  }
-
-  .voice-title {
-    font-size: 32px;
-  }
+/* ------ End Guide ------ */
+/* ------ Start Voice ------ */
+#voice {
+  margin-bottom: 120px;
 }
 
+.voice-container {
+  margin: 0 auto;
+}
 
-.footer-content {
-  background-color: #F9FF81;
-  width: 100%;
-  height: 197px;
+.voice-content {
+  display: grid;
+  gap: 32px;
+}
+
+.slide-contents {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.slide-contents .slide-items {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 24px;
+  background-color: #000000;
 }
 
-.logo-content {
-  width: 100%;
+.slide-contents .slide-items img {
+  width: 150px;
+  margin-right: 32px;
+}
+
+.slide-contents .slide-items p {
+  width: calc(100% - 182px);
+  color: #ffffff;
+  text-align: left;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000000;
+}
+
+.slick-dots li button:before {
+  font-size: 18px;
+  top: 6px;
+}
+
+/* ------ End Voice ------ */
+/* ------ Start Footer ------ */
+.footer-container {
+  background-color: #F9FF81;
+  padding: 32px 24px;
+}
+
+.footer-content {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding: 0 32px;
   align-items: center;
+  margin-bottom: 32px;
 }
 
 .footer-icons {
   display: flex;
 }
 
-.footer-icons a >img {
+.footer-icons li {
+  margin-right: 24px;
+}
+
+.footer-icons li:last-child {
+  margin-right: 0;
+}
+
+.footer-icons li a {
   width: 40px;
-  height: 40px;
-  margin: 10px;
 }
 
-
-@media (max-width: 768px) {
-  .footer-content {
-    height: auto;
-    padding: 20px 0;
-  }
-
-  .footer-content>p {
-    margin-top: 20px;
-    font-size: 11px;
-  }
-
-  .footer-main-icon {
-    width: 80px;
-    height: 80px;
-    padding: 10px;
-  }
-
-  .logo-content {
-    flex-direction: column;
-    padding: 10px;
-  }
+.footer-icons li a img {
+  width: 40px;
 }
 
+.copyright {
+  text-align: center;
+}
 
-/* ------- SP --------- */
+/* ------ End Footer ------ */
+/*--------------- SP Screen ---------------*/
 @media (max-width: 768px) {
-  .invitation {
-    padding: 40px;
-  }
-
-  .invitation-container p {
-    font-size: 24px;
-  }
-
-  .main-price {
-    margin: 56px auto;
-  }
-
-  .price-title {
+  /* ----- Start All Style ----- */
+  h2 {
     font-size: 32px;
   }
-
-  .price-description p,
-  .price-image-description p {
-    font-size: 14px;
+  h3 {
+    font-size: 24px;
   }
-
-  .price-image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  p {
+    font-size: 13px;
+  }
+  .transparent-button {
+    width: 240px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  .section01 {
+    margin: 56px auto;
+  }
+  .section02 {
+    padding: 56px 0;
+  }
+  .wrapper {
+    padding: 0 3%;
+  }
+  /* ----- End All Style ----- */
+  /* ----- Start Header ----- */
+  .navbar {
+    padding: 10px 24px 10px 24px;
+  }
+  .logo-container {
+    width: 48px;
+    height: 48px;
+  }
+  /* ----- End Header ----- */
+  /* ----- Start FKV ----- */
+  .fkv-content {
+    gap: 24px;
+  }
+  .main-title {
+    display: grid;
+    gap: 4px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .title-sub {
+    font-size: 16px;
+  }
+  .splide {
+    display: block !important;
+  }
+  .bg-img .slide-media img {
+    transition: 7s 1s ease-out;
+  }
+  .splide__slide.bg-item {
+    width: 100% !important;
+    height: 80vh !important;
+  }
+  .splide__slide.bg-item img {
+    width: 100%;
+    height: 100%;
+  }
+  .bg-img .splide__slide[class*=-active] .slide-media img {
+    transition-delay: 0s;
+    transform: scale(1.05);
+  }
+  .bg-img .splide__slide[class*=-active] .slide-title {
+    animation: bg-img-fadeIn 2s 0.5s var(--easing) both;
+  }
+  @keyframes bg-img-fadeIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+      filter: blur(300px);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  /* ----- End FKV ----- */
+  /* ----- Start WhyECYjapan ----- */
+  .whyecyjapan-content {
+    gap: 16px;
+  }
+  /* ----- End WhyECYjapan ----- */
+  /* ----- Start Recommended ----- */
+  .recommended-tour-content {
+    display: grid;
+    gap: 24px;
+  }
+  .recommended-image-content {
+    gap: 8px;
+  }
+  .sample-content {
+    margin-top: 32px;
+    gap: 24px;
+  }
+  /* ----- End Recommended ----- */
+  /* ------ Start CTA ------ */
+  #cta {
+    padding: 48px;
+  }
+  /* ------ End CTA ------ */
+  /* ------ Start Price ------ */
+  .price-content {
+    gap: 32px;
+  }
+  .price-content:first-child {
+    gap: 24px;
+  }
+  .price-image {
+    gap: 16px;
+  }
+  /* ------ End Price ------ */
+  /* ------ Start Guide ------ */
+  .guide-container > h2 {
+    margin-bottom: 24px;
+  }
+  .guide-content {
+    gap: 24px;
     justify-content: center;
+    grid-template-areas: "a" "b";
   }
-
-  .price-image-container>img {
-    margin-top: 30px;
-    width: 80%;
+  .guide-image {
+    max-width: 360px;
   }
-
-  .price-image-description {
-    margin: 30px 0px;
+  .guide-description > .guide-title > .TikTok-icon {
+    width: 32px;
   }
-
-  .price-image-description p {
-    margin-bottom: 5px;
-    padding: 0px 40px;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: "Darker Grotesque", sans-serif;
-    text-align: center;
+  /* ------ End Guide ------ */
+  /* ------ Start Voice ------ */
+  #voice {
+    margin-bottom: 88px;
   }
-}
+  .voice-content {
+    gap: 24px;
+  }
+  .slide-contents .slide-items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+  }
+  .slide-contents .slide-items img {
+    margin-right: 0;
+  }
+  .slide-contents .slide-items p {
+    width: 100%;
+  }
+  /* ------ End Voice ------ */
+  /* ------ Start Footer ------ */
+  .footer-icons li {
+    margin-right: 16px;
+  }
+  .footer-icons li a {
+    width: 32px;
+  }
+  .footer-icons li a img {
+    width: 32px;
+  }
+  /* ------ End Footer ------ */
+}/*# sourceMappingURL=style.css.map */

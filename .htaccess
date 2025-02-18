@@ -1,0 +1,11 @@
+AddType application/x-httpd-php .htm .html
+#php_flag register_globals on
+
+AuthUserFile /virtual/click/public_html/www.kohseikai.jp/katsuhira/kanri/.htpasswd
+AuthGroupFile /dev/null
+AuthName MembersOnly
+AuthType Basic
+
+<Limit GET POST>
+require valid-user
+</Limit>

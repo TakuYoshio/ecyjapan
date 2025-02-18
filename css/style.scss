@@ -92,6 +92,13 @@ p {
 .logo {
   width: 100%;
 }
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ----- End Header ----- */
 
 /* ----- Start FKV ----- */
@@ -141,7 +148,8 @@ p {
 .img-fluid {
   filter: brightness(40%);
   width: 100%;
-  height: 100vh;
+  max-height: 80vh;
+  height: 720px;
   object-fit: cover;
 }
 /* ----- End FKV ----- */
@@ -386,6 +394,47 @@ p {
   .title-sub {
     font-size: 16px;
   }
+
+  .splide {
+    display: block !important;
+  }
+
+  .bg-img .slide-media img {
+  transition: 7s 1s ease-out;
+  }
+  
+  .splide__slide.bg-item {
+    width: 100% !important;
+    height: 80vh !important;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .bg-img .splide__slide[class*=-active] .slide-media img {
+    transition-delay: 0s;
+    transform: scale(1.05);
+  }
+  
+  .bg-img .splide__slide[class*=-active] .slide-title {
+    animation: bg-img-fadeIn 2s 0.5s var(--easing) both;
+  }
+  
+  @keyframes bg-img-fadeIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+      filter: blur(300px);
+    }
+  
+    100% {
+      transform: scale(1);
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
   /* ----- End FKV ----- */
 
   /* ----- Start WhyECYjapan ----- */
