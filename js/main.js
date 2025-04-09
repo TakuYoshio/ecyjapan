@@ -12,3 +12,18 @@ const target_options = {
 const mySplide = new Splide(target, target_options);
 
 mySplide.mount();
+
+const voiceSlide = '.voice-slide';
+
+const voiceSlide_options = {
+  type: 'fade',   // フェードエフェクト
+  rewind: true,   // 最後まで行ったら最初に戻る
+  autoplay: false, // 自動再生
+  arrows: true,  // 矢印を非表示
+  interval: 7000, // 7秒ごとにスライド
+  speed: 2000     // 2秒かけてフェード
+};
+
+const myVoiceSlide = new Splide(voiceSlide, voiceSlide_options);
+
+myVoiceSlide.mount();

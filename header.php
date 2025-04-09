@@ -16,9 +16,9 @@
     rel="stylesheet">
   <link href="<?php echo get_theme_file_uri('css/splide-core.min.css'); ?>" rel="stylesheet" />
   <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/destyle.css'); ?>">
+  <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/style.css'); ?>"> 
   <?php /*?>トップページの場合<?php */?>
   <?php if ( is_home() || is_front_page() ) : ?>
-    <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/style.css'); ?>">
     <link rel="stylesheet" href="<?php echo get_theme_file_uri('css/style.css'); ?>">
   <?php endif; ?>
   <?php /*?>固定ページの場合<?php */?>

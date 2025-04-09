@@ -11,7 +11,8 @@
               <h1 class="title">Tokyo Private Tour</h1>
               <h1 class="title-sub">Your Exclusive Journey</h1>
             </div>
-            <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="transparent-button">
+            <!-- <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="transparent-button"> -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1mVIg2QEapFzYuGHOmSiCdNpQoMLF3Zp3dBC2UDZD0rG12w/viewform" class="transparent-button">
               Free initial consultation
             </a>
           </div>
@@ -87,7 +88,8 @@
     <!-- ------ Start CTA ------ -->
     <section id="cta">
       <div>
-        <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="transparent-button">
+        <!-- <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="transparent-button"> -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1mVIg2QEapFzYuGHOmSiCdNpQoMLF3Zp3dBC2UDZD0rG12w/viewform" class="transparent-button">
           Free initial consultation
         </a>
       </div>
@@ -162,58 +164,58 @@
       <div class="voice-container">
         <div class="voice-content">
           <h2>Voice</h2>
-          <div class="splide">
-            <div class="splide__track">
-              <ul class="slide-contents splide__list">
-                <li class="slide-items plide__slide">
+          <div id="voice-carousel" class="splide voice-slide">
+            <div class="splide__track slide-container">
+              <div class="slide-contents splide__list">
+                <div class="slide-items splide__slide">
                   <img src="<?php echo get_theme_file_uri('images/Voice01.png'); ?>" alt="">
                   <p>
                     Emiri was a fantastic guide for our tour around Tokyo. She was kind, courteous, understanding and welcoming to us. We couldn’t have asked for a better guide! The tour itself was amazing. Not only did we get to learn a lot about some of the history of streets in Tokyo but we got to try some bars that I would’ve never had the chance to just by planning by myself. We would highly recommend using both the tour and Emiri as a guide again.
                   </p>
-                </li>
-                <li class="slide-items plide__slide">
+                </div>
+                <div class="slide-items splide__slide">
                   <img src="<?php echo get_theme_file_uri('images/Voice02.png'); ?>" alt="">
                   <p>
                     The tour guide Emiri was phenomenal, very knowledgeable & answered questions with ease. Great walking tour to help get a taste of the wild world ofTokyo. I can absolutely say that I’d without a doubt be happy to join another tour on my next trip to the area! 10/10!!
                   </p>
-                </li>
-                <li class="slide-items plide__slide">
+                </div>
+                <div class="slide-items splide__slide">
                   <img src="<?php echo get_theme_file_uri('images/Voice03.png'); ?>" alt="">
                   <p>
                     Our experience was wonderful. Our tour guide Emiri was very polite and friendly but also extremely knowledgeable about Japan and the area that we were in. She made us feel right at home and the atmosphere felt like catching up with an old friend and having a few drinks here and there.There was no pressure during the entire trip and it was well worth it in the end. I highly recommend this tour if you are unsure of how things work.
                   </p>
-                </li>
-                <li class="slide-items plide__slide">
+                </div>
+                <div class="slide-items splide__slide">
                   <img src="<?php echo get_theme_file_uri('images/Voice04.png'); ?>" alt="">
                   <p>
                     Emiri was amazing and provided us with plenty of info about many things. When the tour was complete she even spent the time showing us where we could get some sweets to top off the night and suggested some other Izakayas that we could try if we wanted to extend our evening. Overall, this was an excellent experience with a wonderful guide!
                   </p>
-                </li>
-                <li class="slide-items plide__slide">
+                </div>
+                <div class="slide-items splide__slide">
                   <img src="<?php echo get_theme_file_uri('images/Voice05.png'); ?>" alt="">
                   <p>
                     Emiri was a great guide! She was very knowledgeable about Harajuku and showed my daughter all of the popular shops and foods!
                   </p>
-                </li>
-                <li class="slide-items plide__slide">
+                </div>
+                <div class="slide-items splide__slide">
                   <img src="<?php echo get_theme_file_uri('images/Voice06.png'); ?>" alt="">
                   <p>
                     Emiri was a gracious guide. Not gonna like I was apprehensive about the language barrier, but Emiri’s English was fine and we had great conversations. I’d def like to go back with a group of friends!
                   </p>
-                </li>
-                <li class="slide-items plide__slide">
+                </div>
+                <div class="slide-items splide__slide">
                   <img src="<?php echo get_theme_file_uri('images/Voice07.png'); ?>" alt="">
                   <p>
                     Emiri was great! Her English is great(she actually teaches Japanese to English speakers on the side). I told her I wanted to do some thrift shopping and she made sure to point out recommended shops along the way. She’s also super knowledgeable about Japan in general so if you have question, she’s a great resource. My favorite part was learning about the “dark side” of Japan over lunch!lol
                   </p>
-                </li>
-                <li class="slide-items plide__slide">
+                </div>
+                <div class="slide-items splide__slide">
                   <img src="<?php echo get_theme_file_uri('images/Voice08.png'); ?>" alt="">
                   <p>
                     Our escort Emiri was absolutely fantastic! She was great at explaining the different areas, cultural nuances and what life is like in different areas of Tokyo. This is a must do and I just wish we had booked it sooner into the trip to have the extra knowledge and hidden places to visit.
                   </p>
-                </li>
-                <li class="slide-items plide__slide">
+                </div>
+                <div class="slide-items splide__slide">
                   <img src="<?php echo get_theme_file_uri('images/Voice09.png'); ?>" alt="">
                   <p>
                     Upon meeting Emiri we knew that the day was packed with fun events, shops and places to see. She had already taken the time to make an itinerary tailored to our interests.
@@ -222,8 +224,8 @@
                     Whether it's your 1st or 100th time in Japan, you should schedule a tour with Emiri! 
                     The memories made from this day will stick with me forever. Thank you Emiri-san!
                   </p>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -234,7 +236,8 @@
     <!-- ------ Start CTA ------ -->
     <section id="cta">
       <div>
-        <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="transparent-button">
+        <!-- <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="transparent-button"> -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1mVIg2QEapFzYuGHOmSiCdNpQoMLF3Zp3dBC2UDZD0rG12w/viewform" class="transparent-button">
           Free initial consultation
         </a>
       </div>

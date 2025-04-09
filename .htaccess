@@ -1,11 +1,10 @@
-AddType application/x-httpd-php .htm .html
-#php_flag register_globals on
-
-AuthUserFile /virtual/click/public_html/www.kohseikai.jp/katsuhira/kanri/.htpasswd
-AuthGroupFile /dev/null
-AuthName MembersOnly
-AuthType Basic
-
-<Limit GET POST>
-require valid-user
-</Limit>
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress

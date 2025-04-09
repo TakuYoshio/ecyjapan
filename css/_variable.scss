@@ -1,0 +1,22 @@
+/* ***************************************************************** 
+*	Media Query
+* ***************************************************************** */
+$breakpoints: (
+  sm: 460px, // モバイル
+  md-sm: 679px, //  タブレットとモバイルの間幅
+  md: 768px, // タブレットレイアウト縦
+  lg-md: 880px, // タブレットレイアウト横 縦の間
+  lg: 1024px, // タブレットレイアウト横
+  xl: 1280px
+);
+@mixin min($breakpoint) {
+  @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
+
+@mixin max($breakpoint) {
+  @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
