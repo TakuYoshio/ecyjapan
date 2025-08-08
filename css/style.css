@@ -395,6 +395,13 @@ img {
   text-align: center;
 }
 
+.footer-text {
+  text-align: center;
+}
+.footer-text p {
+  font-size: 16px;
+}
+
 /* ------ End Footer ------ */
 /*--------------- SP Screen ---------------*/
 @media (max-width: 768px) {

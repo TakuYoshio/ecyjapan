@@ -6,6 +6,15 @@
             <img class="logo" src="<?php echo get_theme_file_uri('images/logo.png'); ?>" alt="logo">
           </a>
         </div>
+        <div class="footer-text">
+          <p>
+            Name : E.C.Y.japan<br>
+            Business Address : <br>
+            Japan, Tokyo*Will be disclosed upon request without delay.”<br>
+            Phone Number : 080-7821-3293<br>
+            Email : e.c.y.japan2020@gmail.com
+          </p>
+        </div>
         <ul class="footer-icons">
           <li>
             <a href="https://www.instagram.com/ecyjapan_emiri?igsh=MW1rZzVocm56dTF3cA%3D%3D&utm_source=qr">
