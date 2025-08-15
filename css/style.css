@@ -79,6 +79,10 @@ p {
   text-align: center;
 }
 
+.emphasis {
+  font-weight: 600;
+}
+
 /* ----- End All Style ----- */
 /* ----- Start Header ----- */
 .navbar {
@@ -367,7 +371,6 @@ img {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 32px;
 }
 
@@ -377,6 +380,8 @@ img {
 
 .footer-icons li {
   margin-right: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 .footer-icons li:last-child {
@@ -568,6 +573,23 @@ img {
   }
   .footer-icons li a img {
     width: 32px;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-icons li {
+    margin-right: 24px;
+    width: 28px;
+    height: 28px;
+  }
+  .footer-icons li img {
+    width: 100%;
+    height: 100%;
   }
   /* ------ End Footer ------ */
 }/*# sourceMappingURL=style.css.map */

@@ -8,11 +8,27 @@
         </div>
         <div class="footer-text">
           <p>
-            Name : E.C.Y.japan<br>
-            Business Address : <br>
+            
+            <span class="emphasis">Head of operation : </span><br>
+            E.C.Y.japan<br>
+            <span class="emphasis">Name : </span><br>
+            Emiri Konishi<br>
+            <span class="emphasis">Business Address : </span><br>
             Japan, Tokyo*Will be disclosed upon request without delay.”<br>
-            Phone Number : 080-7821-3293<br>
-            Email : e.c.y.japan2020@gmail.com
+            <span class="emphasis">Phone Number : </span><br>
+            080-7821-3293<br>
+            <span class="emphasis">Email : </span><br>
+            e.c.y.japan2020@gmail.com<br>
+            <span class="emphasis">Additional fees : </span><br>
+            Food and drink expenses incurred during the tour<br>
+            <span class="emphasis">Accepted payment methods : </span><br>
+            Credit Card or PayPal<br>
+            <span class="emphasis">Delivery times : </span><br>
+            On the day of the tour<br>
+            <span class="emphasis">Payment period : </span><br>
+            Payments are processed immediately<br>
+            <span class="emphasis">Price : </span><br>
+            The tour content will be determined based on the number of participants.
           </p>
         </div>
         <ul class="footer-icons">
