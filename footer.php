@@ -9,9 +9,9 @@
         <div class="footer-text">
           <p>
             
-            <span class="emphasis">Head of operation : </span><br>
-            E.C.Y.japan<br>
             <span class="emphasis">Name : </span><br>
+            E.C.Y.japan<br>
+            <span class="emphasis">Head of operation : </span><br>
             Emiri Konishi<br>
             <span class="emphasis">Business Address : </span><br>
             Japan, Tokyo*Will be disclosed upon request without delay.”<br>
