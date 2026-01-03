@@ -6,7 +6,7 @@
             <img class="logo" src="<?php echo get_theme_file_uri('images/logo.png'); ?>" alt="logo">
           </a>
         </div>
-        <div class="footer-text">
+        <!-- <div class="footer-text">
           <p>
             
             <span class="emphasis">Name : </span><br>
@@ -30,7 +30,7 @@
             <span class="emphasis">Price : </span><br>
             The tour content will be determined based on the number of participants.
           </p>
-        </div>
+        </div> -->
         <ul class="footer-icons">
           <li>
             <a href="https://www.instagram.com/ecyjapan_emiri?igsh=MW1rZzVocm56dTF3cA%3D%3D&utm_source=qr">
